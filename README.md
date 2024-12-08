@@ -1,4 +1,4 @@
-# Aditya Kumar Singh - Ethical Hacker Portfolio
+# Aditya Kumar Singh Portfolio
 
 This repository contains the source code for a professional and interactive portfolio website showcasing the skills, projects, and achievements of Aditya Kumar Singh, an ethical hacker and cybersecurity specialist.
 
