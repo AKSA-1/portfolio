@@ -1,0 +1,197 @@
+/* styles.css */
+
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Fira Code', monospace;
+    color: #ffffff;
+    background-color: #121212;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(45deg, #1e3c72, #2a5298);
+    color: white;
+}
+
+header .profile-img {
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Navigation Bar */
+nav {
+    background: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #4caf50;
+}
+
+/* Sections Styling */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #4caf50;
+}
+
+.section p, .section ul {
+    font-size: 1rem;
+    color: #dddddd;
+    line-height: 1.6;
+}
+
+/* Skills Section */
+.skill-item {
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px;
+    background: #1e1e1e;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease;
+}
+
+.skill-item:hover {
+    background: #333;
+}
+
+.skill-details {
+    display: none;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+/* Projects Section */
+.projects-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    width: calc(33% - 40px);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 255, 0, 0.8);
+}
+
+.project h3 {
+    margin-bottom: 10px;
+    color: #4caf50;
+}
+
+.project p {
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+/* Contact Form */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 1px solid #4caf50;
+}
+
+form input, form textarea {
+    background: #1e1e1e;
+    color: white;
+}
+
+form button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #3d8b40;
+}
+
+/* Footer */
+footer {
+    background: #1e1e1e;
+    text-align: center;
+    padding: 20px 10px;
+    color: #ffffff;
+}
+
+footer a {
+    color: #4caf50;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 80%;
+    }
+}
